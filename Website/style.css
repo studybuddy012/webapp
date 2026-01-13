@@ -1,0 +1,154 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #ece5dd;
+  height: 100vh;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ece5dd;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #075e54;
+}
+
+.login-box input {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-box button {
+  margin-top: 12px;
+  padding: 10px 30px;
+  background: #25d366;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #1ebe5d;
+}
+
+/* ===== CHAT CONTAINER ===== */
+.chat-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ece5dd;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #075e54;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ===== MESSAGES AREA ===== */
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== MESSAGE BUBBLES (SHORT & COMPACT) ===== */
+.msg {
+  display: inline-block;           /* 🔥 makes bubble short */
+  max-width: 65%;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* ===== YOUR MESSAGE ===== */
+.me {
+  background: #dcf8c6;
+  margin-left: auto;
+  margin-right: 6px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ===== OTHER MESSAGE ===== */
+.other {
+  background: #ffffff;
+  margin-left: 6px;
+  border-bottom-left-radius: 4px;
+}
+
+/* ===== TYPING INDICATOR ===== */
+.typing {
+  font-size: 12px;
+  color: #555;
+  padding-left: 12px;
+  padding-bottom: 4px;
+}
+
+/* ===== INPUT AREA ===== */
+.input-box {
+  display: flex;
+  padding: 8px;
+  background: #f0f0f0;
+  align-items: center;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-box button {
+  margin-left: 8px;
+  padding: 10px 18px;
+  background: #25d366;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #1ebe5d;
+}
+
+/* ===== SCROLLBAR (OPTIONAL CLEAN LOOK) ===== */
+.messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}

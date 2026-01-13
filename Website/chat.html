@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Web Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Socket.IO CDN -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+
+<div class="chat-container">
+
+  <!-- HEADER -->
+  <div class="header" id="header">Chat</div>
+
+  <!-- MESSAGES -->
+  <div class="messages" id="messages"></div>
+
+  <!-- TYPING -->
+  <div class="typing" id="typing"></div>
+
+  <!-- INPUT -->
+  <div class="input-box">
+
+    <!-- PHOTO -->
+    <label class="photo-btn">
+      📷
+      <input type="file" id="photo" accept="image/*" hidden>
+    </label>
+
+    <!-- TEXT -->
+    <input id="msg" placeholder="Type a message">
+
+    <!-- SEND -->
+    <button onclick="send()">➤</button>
+  </div>
+
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
